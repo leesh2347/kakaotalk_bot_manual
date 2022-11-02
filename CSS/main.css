@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* 
+  Cascading Style Sheets
+  HTML 파일을 작성할 때 글자의 크기나 색깔, 여백 등의 각종 스타일을 지정할 떄 사용하는 것 입니다.
+*/
+
+.all_background {
+	background-color: #1C1C1C;
+}
+
+.header {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.header a {
+	font-size: 25px;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: dotum;
+}
+
+.nav {
+	text-align: center;
+	background-color: #0B3861;
+	width: 100%;
+	height: 50px;
+	
+}
+
+.nav td {
+	padding-top: 10px;
+	background-color: #084B8A;
+	border:solid 2px #0B3861;
+}
+
+.nav img {
+	border:solid 2px #58ACFA;
+	width: 40px;
+	height: 40px;
+}
+
+
+.nav a {
+	font-size: 15px;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: dotum;
+	margin-left: 3%;
+}
+
+.content_div {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.content_div h1 {
+	font-size: 30px;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: dotum;
+}
+
+.content_div p {
+	font-size: 15px;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: dotum;
+}
+
+.content_div h2 {
+	font-size: 24px;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: dotum;
+}
+
+.content_div a {
+	font-size: 24px;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: dotum;
+}
+
+.img {
+	width: 310px;
+	height: 400px;
+}
+
+table td {
+	border: 5px solid-white;
+}
+
+
+
+
+
+
+
+
+
