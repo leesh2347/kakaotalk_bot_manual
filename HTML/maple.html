@@ -1,1 +1,294 @@
-1
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="루시봇_명령어">
+	<meta name="keywords" content="kakaotalkbot">
+	
+	<link rel="stylesheet" type="text/css" href="../CSS/main.css">
+	
+	<title>루시 Jr. 사용 설명서</title>
+	<script type="text/javascript">
+		function getshow(ids){
+			var con=document.getElementById(ids);
+			if(con.style.display=="none")
+			{
+				con.style.display="block";
+				}
+			else
+			{
+				con.style.display="none";
+				}
+		}
+	</script>
+</head>
+
+<body class="all_background">
+	<div>
+		<header class="header">
+			
+			<a href="../index.html">
+				<p>메인으로</p>
+			</a>
+			<table class="nav">
+						<tr>
+							<td>
+								<a href="maple.html">
+								<img src="../Images/maplelogo.jpg" alt="메이플" class="img">
+								<p>메이플<br>관련 기능</p>
+								</a>
+							</td>
+							<td>
+								<a href="lostark.html">
+								<img src="../Images/loalogo.jpg" alt="로아" class="img">
+								<p>로스트아크<br>관련 기능</p>
+								</a>
+							</td>
+							<td>
+								<a href="misc.html">
+								<img src="../Images/miscicon.jpg" alt="그외" class="img">
+								<p>그 외 기능</p>
+								</a>
+							</td>
+							<td>
+								<a href="fun.html">
+								<img src="../Images/funicon.jpg" alt="재미" class="img">
+								<p>재미요소</p>
+								</a>
+							</td>
+							<td>
+								<a href="s1.html">
+								<img src="../Images/pokicon.png" alt="pok" class="img">
+								<p>포켓몬 게임</p>
+								</a>
+							</td>
+						</tr>
+			</table>
+		</header>
+	</div>
+	
+	<div class="content_div">
+		<article>
+			<header>
+				<h1>메이플스토리 관련 기능</h1>
+				<p>루시의 기능 중 온라인 게임 '메이플스토리' 관련 기능들입니다.</p>
+				<p><br><span style="color:#A9F5F2;background-color:#0431B4">@하늘색</span>: 해당 기능을 불러오는 명령어의 접두어</p>
+				<p><span style="color:#F6CEF5;background-color:#0431B4">[분홍색]</span>: 필수로 입력해야 하는 인자</p>
+				<p><span style="color:#01DF3A;background-color:#0431B4">(연두색)</span>: 생략 가능한 옵션 인자</p>
+			</header>
+			
+			<section>
+				<h2>
+				<a href="javascript:getshow('divcon')">▶ @메이플</a>
+				</h2>
+				<div id="divcon" style="display:none">
+					<p>사용법: <span style="color:#A9F5F2;background-color:#0431B4">@메이플 </span><span style="color:#F6CEF5;background-color:#0431B4">[닉네임]</span></p>
+					<p>해당 메이플 캐릭터의 사진과 정보를 출력합니다.</p>
+					<img src="../Images/maple_1_1.jpg" alt="메이플1">
+					<p><br>※한 번 이상 검색 시, 닉네임을 생략하면 최근에 가장 많이 검색한 닉네임을 루시가 스스로 기억해서 불러옵니다.</p>
+					<img src="../Images/maple_1_2.jpg" alt="메이플2">
+				</div>
+			</section>
+			
+			<section>
+				<h2>
+				<a href="javascript:getshow('divcon2')">▶ @무릉</a>
+				</h2>
+				<div id="divcon2" style="display:none">
+					<p>사용법: <span style="color:#A9F5F2;background-color:#0431B4">@무릉 </span><span style="color:#F6CEF5;background-color:#0431B4">[닉네임]</span><span style="color:#01DF3A;background-color:#0431B4"> (닉네임2) (닉네임3) ...</span></p>
+					<p>해당 메이플 캐릭터의 무릉도장 기록을 검색합니다.</p>
+					<p><br>※한 번 이상 검색 시, 닉네임을 생략하면 최근에 가장 많이 검색한 닉네임을 루시가 스스로 기억해서 불러옵니다.</p>
+					<img src="../Images/maple_1_3.jpg" alt="메이플3">
+					<p><br>※닉네임을 6인 이하 다수 입력 시, 다수의 무릉도장 기록을 한꺼번에 검색할 수 있습니다.<br>다중 검색은 닉네임 생략 시 기록에 반영되지 않습니다.</p>
+					<img src="../Images/maple_1_4.jpg" alt="메이플4">
+				</div>
+			</section>
+			
+			<section>
+				<h2>
+				<a href="javascript:getshow('divcon3')">▶ @유니온</a>
+				</h2>
+				<div id="divcon3" style="display:none">
+					<p>사용법: <span style="color:#A9F5F2;background-color:#0431B4">@유니온 </span><span style="color:#F6CEF5;background-color:#0431B4">[닉네임]</span></p>
+					<p>해당 메이플 캐릭터의 유니온 레벨과 전투력, 코인 수급량을 검색합니다.</p>
+					<img src="../Images/maple_1_5.jpg" alt="메이플5">
+					<p><br>※한 번 이상 검색 시, 닉네임을 생략하면 최근에 가장 많이 검색한 닉네임을 루시가 스스로 기억해서 불러옵니다.</p>
+					<img src="../Images/maple_1_6.jpg" alt="메이플6">
+				</div>
+			</section>
+			
+			<section>
+				<h2>
+				<a href="javascript:getshow('divcon4')">▶ @레벨</a>
+				</h2>
+				<div id="divcon4" style="display:none">
+					<p>사용법: <span style="color:#A9F5F2;background-color:#0431B4">@레벨 </span><span style="color:#F6CEF5;background-color:#0431B4">[닉네임]</span><span style="color:#01DF3A;background-color:#0431B4"> (목표레벨)</span></p>
+					<p>해당 메이플 캐릭터의 레벨, 경험치 정보와, 만렙까지의 경험치를 출력합니다.</p>
+					<img src="../Images/maple_1_7.jpg" alt="메이플7">
+					<p><br>※한 번 이상 검색 시, 닉네임을 생략하면 최근에 가장 많이 검색한 닉네임을 루시가 스스로 기억해서 불러옵니다.</p>
+					<img src="../Images/maple_1_8.jpg" alt="메이플8">
+					<p><br>※목표레벨을 같이 입력하면, 해당 레벨까지의 경험치량을 출력합니다.</p>
+					<img src="../Images/maple_1_9.jpg" alt="메이플9">
+				</div>
+			</section>
+			
+			<section>
+				<h2>
+				<a href="javascript:getshow('divcon5')">▶ @히스토리</a>
+				</h2>
+				<div id="divcon5" style="display:none">
+					<p>사용법: <span style="color:#A9F5F2;background-color:#0431B4">@히스토리 </span><span style="color:#F6CEF5;background-color:#0431B4">[닉네임]</span></p>
+					<p>해당 메이플 캐릭터의 경험치 히스토리를 출력합니다.</p>
+					<img src="../Images/maple_1_10.jpg" alt="메이플10">
+					<p><br>※한 번 이상 검색 시, 닉네임을 생략하면 최근에 가장 많이 검색한 닉네임을 루시가 스스로 기억해서 불러옵니다.</p>
+					<img src="../Images/maple_1_11.jpg" alt="메이플11">
+					<p><br>※데이터를 가져오는 maple.gg 사이트의 잦은 구조 변경으로 기능이 작동하지 않는 경우가 있습니다. 이 경우 루시가 스스로 주기적으로 검색 방식을 수정하여 복구하며, 자동 복구에 문제가 생길 경우 개발자가 직접 수정하게 됩니다.</p>
+				</div>
+			</section>
+			
+			<section>
+				<h2>
+				<a href="javascript:getshow('divcon16')">▶ @레벨히스토리</a>
+				</h2>
+				<div id="divcon16" style="display:none">
+					<p>사용법: <span style="color:#A9F5F2;background-color:#0431B4">@레벨히스토리 </span><span style="color:#F6CEF5;background-color:#0431B4">[닉네임]</span></p>
+					<p>해당 메이플 캐릭터의 레벨 히스토리를 출력합니다.</p>
+					<img src="../Images/maple_1_32.jpg" alt="메이플32">
+					<p><br>※한 번 이상 검색 시, 닉네임을 생략하면 최근에 가장 많이 검색한 닉네임을 루시가 스스로 기억해서 불러옵니다.</p>
+					<img src="../Images/maple_1_33.jpg" alt="메이플33">
+					<p><br>※데이터를 가져오는 maple.gg 사이트의 잦은 구조 변경으로 기능이 작동하지 않는 경우가 있습니다. 이 경우 루시가 스스로 주기적으로 검색 방식을 수정하여 복구하며, 자동 복구에 문제가 생길 경우 개발자가 직접 수정하게 됩니다.</p>
+				</div>
+			</section>
+			
+			<section>
+				<h2>
+				<a href="javascript:getshow('divcon6')">▶ @메창</a>
+				</h2>
+				<div id="divcon6" style="display:none">
+					<p>사용법: <span style="color:#A9F5F2;background-color:#0431B4">@메창 </span><span style="color:#F6CEF5;background-color:#0431B4">[닉네임]</span></p>
+					<p>해당 메이플 캐릭터의 레벨, 무릉, 유니온을 통해 메창력을 계산합니다.</p>
+					<img src="../Images/maple_1_13.jpg" alt="메이플13">
+					<p><br>※닉네임 없이 명령어만 입력 시, 사용법과 계산 기준을 출력합니다.</p>
+					<img src="../Images/maple_1_12.jpg" alt="메이플12">
+				</div>
+			</section>
+			
+			<section>
+				<h2>
+				<a href="javascript:getshow('divcon7')">▶ @무토</a>
+				</h2>
+				<div id="divcon7" style="display:none">
+					<p>사용법: <span style="color:#A9F5F2;background-color:#0431B4">@무토 </span><span style="color:#01DF3A;background-color:#0431B4">(음식이름)</span></p>
+					<p>배고픈 무토 일일 퀘스트의 재료 위치를 표시합니다.<br>(츄릅나무의 경우 좌, 우측 모든 발판 중 랜덤으로 등장합니다.)</p>
+					<img src="../Images/maple_1_14.jpg" alt="메이플14">
+					<p><br>요리 이름을 입력하면 해당 요리의 요구 재료만을 표시합니다.</p>
+					<img src="../Images/maple_1_15.jpg" alt="메이플15">
+				</div>
+			</section>
+			
+			<section>
+				<h2>
+				<a href="javascript:getshow('divcon8')">▶ @보스</a>
+				</h2>
+				<div id="divcon8" style="display:none">
+					<p>사용법: <span style="color:#A9F5F2;background-color:#0431B4">@보스 </span><span style="color:#F6CEF5;background-color:#0431B4">[보스이름]</span></p>
+					<p>해당 보스의 정보를 출력합니다.<br>보스 이름은 띄어쓰기 없이 난이도와 함께 써주세요! (예시: 카오스벨룸)</p>
+					<img src="../Images/maple_1_17.jpg" alt="메이플17">
+					<img src="../Images/maple_1_16.jpg" alt="메이플16">
+				</div>
+			</section>
+			
+			<section>
+				<h2>
+				<a href="javascript:getshow('divcon9')">▶ @농장</a>
+				</h2>
+				<div id="divcon9" style="display:none">
+					<p>사용법: <span style="color:#A9F5F2;background-color:#0431B4">@농장 </span><span style="color:#F6CEF5;background-color:#0431B4">[몬스터이름]</span></p>
+					<p>몬스터 라이프의 해당 몬스터 보유 농장 목록을 출력합니다.<br>meso.kr 사이트의 정보를 기반으로 하고 있습니다.</p>
+					<img src="../Images/maple_1_18.jpg" alt="메이플18">
+					<img src="../Images/maple_1_19.jpg" alt="메이플19">
+				</div>
+			</section>
+			
+			<section>
+				<h2>
+				<a href="javascript:getshow('divcon10')">▶ @물통</a>
+				</h2>
+				<div id="divcon10" style="display:none">
+					<p>사용법: <span style="color:#A9F5F2;background-color:#0431B4">@물통 </span><span style="color:#01DF3A;background-color:#0431B4">(서버이름) (갯수)</span></p>
+					<p>현재 메소 시세(물통) 을 검색합니다.<br>아무 인자 없이 명령어 입력 시 모든 서버의 시세를 출력합니다.</p>
+					<img src="../Images/maple_1_20.jpg" alt="메이플20">
+					<p><br>서버 이름과 갯수를 같이 입력하면 현재 시세에 맞춰 원화 가치를 계산해 줍니다.</p>
+					<img src="../Images/maple_1_21.jpg" alt="메이플21">
+					<p><br>※통계 수집 사이트에 문제가 생길 경우 검색했던 가장 최근 시세를 불러옵니다.</p>
+					<img src="../Images/maple_1_22.jpg" alt="메이플22">
+				</div>
+			</section>
+			
+			<section>
+				<h2>
+				<a href="javascript:getshow('divcon11')">▶ @방무</a>
+				</h2>
+				<div id="divcon11" style="display:none">
+					<p>사용법: <span style="color:#A9F5F2;background-color:#0431B4">@방무 </span><span style="color:#F6CEF5;background-color:#0431B4">[보스방어율] [스텟창방무]</span><span style="color:#01DF3A;background-color:#0431B4"> (코강방무) (스킬방무1) (스킬방무2) ...</span></p>
+					<p>자신의 실 방무 스텟과, 해당 방어율의 보스에게 들어가는 딜량을 계산해줍니다.<br>※모든 인자는 퍼센트(%)를 빼고 입력해주세요!</p>
+					<img src="../Images/maple_1_23.jpg" alt="메이플23">
+				</div>
+			</section>
+			
+			<section>
+				<h2>
+				<a href="javascript:getshow('divcon12')">▶ @재획</a>
+				</h2>
+				<div id="divcon12" style="display:none">
+					<p>사용법: <span style="color:#A9F5F2;background-color:#0431B4">@재획 </span><span style="color:#F6CEF5;background-color:#0431B4">[몬스터레벨] [아이템드롭율] [메소획득량] [시간당 마릿수(만)]</span></p>
+					<p>본섭 기준, 재획비 구매 효율을 계산해줍니다.<br><br>※간당 마릿수는 만 마리 단위로 입력해주세요!<br>※드랍율과 메획은 재획비 사용 전 기준으로 스텟창의 수치를 입력하면 됩니다.</p>
+					<img src="../Images/maple_1_24.jpg" alt="메이플24">
+				</div>
+			</section>
+			
+			<section>
+				<h2>
+				<a href="javascript:getshow('divcon13')">▶ @극성비, @태성비</a>
+				</h2>
+				<div id="divcon13" style="display:none">
+					<p>사용법: <span style="color:#A9F5F2;background-color:#0431B4">@극성비 </span><span style="color:#F6CEF5;background-color:#0431B4">[레벨]</span></p>
+					<p><span style="color:#A9F5F2;background-color:#0431B4">@태성비 </span><span style="color:#F6CEF5;background-color:#0431B4">[레벨]</span></p>
+					<p>극한 성장의 비약과 태풍 성장의 비약의 경험치량을 출력합니다.</p>
+					<img src="../Images/maple_1_25.jpg" alt="메이플25">
+				</div>
+			</section>
+			
+			<section>
+				<h2>
+				<a href="javascript:getshow('divcon14')">▶ @추옵</a>
+				</h2>
+				<div id="divcon14" style="display:none">
+					<p>사용법: <span style="color:#A9F5F2;background-color:#0431B4">@추옵 </span><span style="color:#F6CEF5;background-color:#0431B4">[세트이름]</span><span style="color:#01DF3A;background-color:#0431B4"> (무기이름)</span></p>
+					<p>해당 무기의 1~5등급별 공격력/마력 추옵을 검색합니다.</p>
+					<img src="../Images/maple_1_26.jpg" alt="메이플26">
+					<p><br>무기 이름을 생략 시 해당 세트의 모든 무기별 추옵을 출력합니다.</p>
+					<img src="../Images/maple_1_29.jpg" alt="메이플29">
+					<img src="../Images/maple_1_30.jpg" alt="메이플30">
+					<p><br>아무 인자도 입력하지 않을 시 사용법을 출력합니다.</p>
+					<img src="../Images/maple_1_27.jpg" alt="메이플27">
+					<img src="../Images/maple_1_28.jpg" alt="메이플28">
+				</div>
+			</section>
+			
+			<section>
+				<h2>
+				<a href="javascript:getshow('divcon15')">▶ @녜힁</a>
+				</h2>
+				<div id="divcon15" style="display:none">
+					<p>사용법: <span style="color:#A9F5F2;background-color:#0431B4">@녜힁 </span><span style="color:#F6CEF5;background-color:#0431B4">[글자수]</span></p>
+					<p>2~6글자 사이의 녜힁(뜻 없는 잡닉) 닉네임을 생성합니다.</p>
+					<img src="../Images/maple_1_31.jpg" alt="메이플31">
+				</div>
+			</section>
+		</article>
+	</div>
+</body>
+
+</html>
