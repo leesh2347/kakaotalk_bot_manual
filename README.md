@@ -1,0 +1,1 @@
+# kakaotalk_bot_manual
