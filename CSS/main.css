@@ -5,6 +5,7 @@
 */
 
 .all_background {
+	max-width:1000px;
 	background-color: #1C1C1C;
 }
 
@@ -90,9 +91,8 @@
 	font-family: dotum;
 }
 
-.img {
-	width: 310px;
-	height: 400px;
+img {
+	max-width:1000px;
 }
 
 table td {
