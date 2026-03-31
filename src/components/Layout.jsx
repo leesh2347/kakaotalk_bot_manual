@@ -1,10 +1,10 @@
-import { Outlet, NavLink } from 'react-router-dom'
+import { Outlet, NavLink, Link } from 'react-router-dom'
 
 function Layout() {
   return (
     <>
       <header className="header">
-        <a href="/" className="header-home-link">메인으로</a>
+        <Link to="/" className="header-home-link">메인으로</Link>
         <table className="nav">
           <tbody>
             <tr>
