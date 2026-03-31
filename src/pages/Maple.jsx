@@ -76,7 +76,7 @@ function Maple() {
         <p>사용법: <span className="legend-prefix">@레벨히스토리 </span><span className="legend-required">[닉네임]</span></p>
         <p>해당 메이플 캐릭터의 레벨 히스토리를 출력합니다.</p>
 		<p>넥슨 공식API에서 지원하지 않는 기능이므로 루시 자체 DB기반으로 구현한 기능이므로, 루시를 통해 검색한 기록을 기준으로 검색합니다.</p>
-        <img src="Images/maple_1_12.jpg" alt="메이플 12" />
+        <img src="Images/maple_1_16.jpg" alt="메이플 16" />
         <p><br />※한 번 이상 검색 시, 닉네임을 생략하면 최근에 가장 많이 검색한 닉네임을 루시가 스스로 기억해서 불러옵니다.</p>
         <img src="Images/maple_1_12.jpg" alt="메이플 12" />
       </CommandSection>
