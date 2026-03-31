@@ -20,49 +20,49 @@ function MapleLlm() {
       <CommandSection title="@메이플">
         <p><span className="legend-required">[판단 기준]</span>: 사용자의 질문이 특정 이름 또는 닉네임의 캐릭터에 대한 단순한 정보 요청</p>
         <p><span className="legend-optional">[예시]</span>: 루시 디벨로이드 캐릭터 정보 검색해줘</p>
-		<img src="Images/maple_1_1.jpg" alt="메이플 1" />
+		<img src="Images/llm_1.jpg" alt="llm 1" />
       </CommandSection>
 
       <CommandSection title="@무릉">
         <p><span className="legend-required">[판단 기준]</span>: 사용자의 질문이 특정 이름 또는 닉네임의 캐릭터에 대한 '무릉' 관련 정보 요청</p>
         <p><span className="legend-optional">[예시]</span>: 루시 디벨로이드 캐릭터 무릉 층수 검색해줘</p>
-		<img src="Images/maple_1_1.jpg" alt="메이플 1" />
+		<img src="Images/maple_1_1.jpg" alt="llm 2" />
       </CommandSection>
 
       <CommandSection title="@유니온">
         <p><span className="legend-required">[판단 기준]</span>: 사용자의 질문이 특정 이름 또는 닉네임의 캐릭터에 대한 '유니온' 관련 정보 요청</p>
         <p><span className="legend-optional">[예시]</span>: 루시 디벨로이드 캐릭터 유니온 검색해줘</p>
-		<img src="Images/maple_1_1.jpg" alt="메이플 1" />
+		<img src="Images/llm_2.jpg" alt="llm 3" />
       </CommandSection>
 
       <CommandSection title="@업적">
         <p><span className="legend-required">[판단 기준]</span>: 사용자의 질문이 특정 이름 또는 닉네임의 캐릭터에 대한 '업적' 관련 정보 요청</p>
         <p><span className="legend-optional">[예시]</span>: 루시 디벨로이드 캐릭터 업적 검색해줘</p>
-		<img src="Images/maple_1_1.jpg" alt="메이플 1" />
+		<img src="Images/maple_1_1.jpg" alt="llm 4" />
       </CommandSection>
 
       <CommandSection title="@아티팩트">
         <p><span className="legend-required">[판단 기준]</span>: 사용자의 질문이 특정 이름 또는 닉네임의 캐릭터에 대한 '아티팩트' 관련 정보 요청</p>
         <p><span className="legend-optional">[예시]</span>: 루시 디벨로이드 캐릭터 아티팩트 검색해줘</p>
-		<img src="Images/maple_1_1.jpg" alt="메이플 1" />
+		<img src="Images/llm_3.jpg" alt="llm 5" />
       </CommandSection>
 
       <CommandSection title="@스탯">
         <p><span className="legend-required">[판단 기준]</span>: 사용자의 질문이 특정 이름 또는 닉네임의 캐릭터에 대한 '스탯' 관련 정보 요청</p>
         <p><span className="legend-optional">[예시]</span>: 루시 디벨로이드 캐릭터 스탯 검색해줘</p>
-		<img src="Images/maple_1_1.jpg" alt="메이플 1" />
+		<img src="Images/llm_4.jpg" alt="llm 6" />
       </CommandSection>
 
       <CommandSection title="@헥사">
         <p><span className="legend-required">[판단 기준]</span>: 사용자의 질문이 특정 이름 또는 닉네임의 캐릭터에 대한 '6 차 강화' 관련 정보 요청</p>
         <p><span className="legend-optional">[예시]</span>: 루시 디벨로이드 캐릭터 6 차 강화 얼마나 되어 있어?</p>
-		<img src="Images/maple_1_1.jpg" alt="메이플 1" />
+		<img src="Images/llm_5.jpg" alt="llm 7" />
       </CommandSection>
 
       <CommandSection title="@메창">
         <p><span className="legend-required">[판단 기준]</span>: 사용자의 질문이 특정 이름 또는 닉네임의 캐릭터가 '얼마나 메창인지'에 대한 정보 요청</p>
         <p><span className="legend-optional">[예시]</span>: 루시 디벨로이드 캐릭터 메창이야?</p>
-		<img src="Images/maple_1_1.jpg" alt="메이플 1" />
+		<img src="Images/llm_6.jpg" alt="llm 8" />
       </CommandSection>
 
       <CommandSection title="@레벨, @히스토리">
@@ -77,7 +77,8 @@ function MapleLlm() {
         <p>루시 디벨로이드 캐릭터 어제 경험치 검색해줘</p>
         <p>루시 디벨로이드 캐릭터 6 월 1 일부터 5 일까지 경험치 검색해줘</p>
         <p>루시 디벨로이드 캐릭터 지난주 월요일부터 금요일까지 경험치 검색해줘</p>
-		<img src="Images/maple_1_1.jpg" alt="메이플 1" />
+		<img src="Images/llm_7.jpg" alt="메이플 9" />
+		<img src="Images/llm_8.jpg" alt="메이플 10" />
       </CommandSection>
 
       <CommandSection title="@6 차">
@@ -87,7 +88,7 @@ function MapleLlm() {
         <p>루시 6 차 강화 1 레벨부터 10 레벨까지 얼마나 들어?</p>
         <p>루시 6 차 강화 10 레벨까지 얼마나 들어?</p>
         <p>루시 6 차 강화 5 레벨부터 얼마나 들어?</p>
-		<img src="Images/maple_1_1.jpg" alt="메이플 1" />
+		<img src="Images/llm_9.jpg" alt="llm 11" />
       </CommandSection>
 
       <CommandSection title="@어센틱">
@@ -97,7 +98,7 @@ function MapleLlm() {
         <p>루시 심볼 1 레벨부터 10 레벨까지 얼마나 들어?</p>
         <p>루시 심볼 10 레벨까지 얼마나 들어?</p>
         <p>루시 심볼 5 레벨부터 얼마나 들어?</p>
-		<img src="Images/maple_1_1.jpg" alt="메이플 1" />
+		<img src="Images/llm_10.jpg" alt="llm 12" />
       </CommandSection>
 
       <CommandSection title="단축어">
