@@ -15,9 +15,9 @@ function Layout() {
                 </NavLink>
               </td>
               <td>
-                <NavLink to="/lostark" className="nav-link">
-                  <img src="Images/loalogo.jpg" alt="로아" />
-                  <p>로스트아크<br/>관련 기능</p>
+                <NavLink to="/maple_llm" className="nav-link">
+                  <img src="Images/maplelogo.jpg" alt="메이플 LLM" />
+                  <p>사람같은<br/>루시</p>
                 </NavLink>
               </td>
               <td>
