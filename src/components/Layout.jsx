@@ -16,7 +16,7 @@ function Layout() {
               </td>
               <td>
                 <NavLink to="/maple_llm" className="nav-link">
-                  <img src="Images/maplelogo.jpg" alt="메이플 LLM" />
+                  <img src="Images/ailogo.jpg" alt="메이플 LLM" />
                   <p>사람같은<br/>루시</p>
                 </NavLink>
               </td>
