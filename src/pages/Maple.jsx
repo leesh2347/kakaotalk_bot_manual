@@ -44,6 +44,15 @@ function Maple() {
         <img src="Images/maple_1_46.jpg" alt="메이플 5" />
         <p><br />※한 번 이상 검색 시, 닉네임을 생략하면 최근에 가장 많이 검색한 닉네임을 루시가 스스로 기억해서 불러옵니다.</p>
       </CommandSection>
+	  
+	  <CommandSection title="@코디">
+        <p>사용법: <span className="legend-prefix">@코디 </span><span className="legend-required">[닉네임]</span></p>
+        <p>해당 메이플 캐릭터의 코디 정보를 검색합니다.</p>
+        <img src="Images/maple_1_14.jpg" alt="메이플 5" />
+        <p><br />※한 번 이상 검색 시, 닉네임을 생략하면 최근에 가장 많이 검색한 닉네임을 루시가 스스로 기억해서 불러옵니다.</p>
+		<img src="Images/maple_1_15.jpg" alt="메이플 5" />
+      </CommandSection>
+
 
       <CommandSection title="@레벨">
         <p>사용법: <span className="legend-prefix">@레벨 </span><span className="legend-required">[닉네임]</span><span className="legend-optional"> (목표레벨)</span></p>
@@ -62,6 +71,15 @@ function Maple() {
         <p><br />※한 번 이상 검색 시, 닉네임을 생략하면 최근에 가장 많이 검색한 닉네임을 루시가 스스로 기억해서 불러옵니다.</p>
         <img src="Images/maple_1_11.jpg" alt="메이플 11" />
       </CommandSection>
+	  
+	  <CommandSection title="@레벨히스토리">
+        <p>사용법: <span className="legend-prefix">@레벨히스토리 </span><span className="legend-required">[닉네임]</span></p>
+        <p>해당 메이플 캐릭터의 레벨 히스토리를 출력합니다.</p>
+		<p>넥슨 공식API에서 지원하지 않는 기능이므로 루시 자체 DB기반으로 구현한 기능이므로, 루시를 통해 검색한 기록을 기준으로 검색합니다.</p>
+        <img src="Images/maple_1_12.jpg" alt="메이플 12" />
+        <p><br />※한 번 이상 검색 시, 닉네임을 생략하면 최근에 가장 많이 검색한 닉네임을 루시가 스스로 기억해서 불러옵니다.</p>
+        <img src="Images/maple_1_12.jpg" alt="메이플 12" />
+      </CommandSection>
 
       <CommandSection title="@스탯">
         <p>사용법: <span className="legend-prefix">@스탯 </span><span className="legend-required">[닉네임]</span></p>
@@ -75,10 +93,7 @@ function Maple() {
       <CommandSection title="@메창">
         <p>사용법: <span className="legend-prefix">@메창 </span><span className="legend-required">[닉네임]</span></p>
         <p><br />해당 캐릭터의 각종 컨텐츠 기준을 통해 메창 점수를 측정합니다.</p>
-        <p><br />측정 기준: 레벨, 유니온 레벨, 전투력, 아티팩트 레벨, HEXA 매트릭스 강화, 어센틱포스 강화, 해방 여부, 자석펫 사용 마릿수</p>
-        <p><br />전체보기를 누를 시 각 지표별 세부 점수 측정을 확인할 수 있습니다.</p>
-        <img src="Images/maple_1_12.jpg" alt="메이플 12" />
-        <br />
+        <p><br />측정 기준: 레벨, 유니온, 아티팩트, 전투력, 어센틱포스, HEXA 매트릭스, 유니온 챔피언, 해방 여부, 컴플리트 가챠 안드로이드 보유 여부, 자석펫 보유 여부</p>
         <img src="Images/maple_1_13.jpg" alt="메이플 13" />
         <p><br />※닉네임 없이 명령어만 입력 시, 사용법과 점수 기준, 측정 지표 설명을 출력합니다.</p>
         <img src="Images/maple_1_49.jpg" alt="메이플 12" />
@@ -99,14 +114,6 @@ function Maple() {
         <p>사용법: <span className="legend-prefix">@보스 </span><span className="legend-required">[보스이름]</span></p>
         <p>해당 보스의 정보를 출력합니다.<br />보스 이름은 띄어쓰기 없이 난이도와 함께 써주세요! (예시: 카오스벨룸)</p>
         <img src="Images/maple_1_17.jpg" alt="메이플 17" />
-        <br />
-        <img src="Images/maple_1_16.jpg" alt="메이플 16" />
-      </CommandSection>
-
-      <CommandSection title="@본캐">
-        <p>사용법: <span className="legend-prefix">@본캐 </span><span className="legend-required">[닉네임]</span></p>
-        <p>부캐 닉네임을 입력하면 본캐의 레벨과 직업을 찾아줍니다.<br />(본캐 기준: 월드 내 가장 레벨이 높은 캐릭터)</p>
-        <img src="Images/maple_1_48.jpg" alt="메이플 18" />
       </CommandSection>
 
       <CommandSection title="@메스피">
@@ -116,14 +123,24 @@ function Maple() {
         <img src="Images/maple_1_51.jpg" alt="메이플 31" />
       </CommandSection>
 
-      <CommandSection title="@물통">
-        <p>사용법: <span className="legend-prefix">@물통 </span><span className="legend-optional">(서버이름) (갯수)</span></p>
-        <p>현재 메소 시세 (물통) 을 검색합니다.<br />아무 인자 없이 명령어 입력 시 모든 서버의 시세를 출력합니다.<br />시세는 아이템매니아 기준입니다.</p>
-        <img src="Images/maple_1_20.jpg" alt="메이플 20" />
-        <p><br />서버 이름과 갯수를 같이 입력하면 현재 시세에 맞춰 원화 가치를 계산해 줍니다.</p>
-        <img src="Images/maple_1_21.jpg" alt="메이플 21" />
-        <p><br />※통계 수집 사이트에 문제가 생길 경우 검색했던 가장 최근 시세를 불러옵니다.</p>
-        <img src="Images/maple_1_22.jpg" alt="메이플 22" />
+      <CommandSection title="@썬데이">
+        <p>사용법: <span className="legend-prefix">@썬데이</span></p>
+        <p>썬데이 메이플을 출력합니다.</p>
+        <p>썬데이는 금요일 10시경 이후 뜨므로, 그 이전에는 사용할 수 없습니다.</p>
+        <img src="Images/maple_1_19.jpg" alt="메이플 31" />
+      </CommandSection>
+	  
+	  <CommandSection title="@공지구독">
+        <p>사용법: <span className="legend-prefix">@공지구독</span></p>
+        <p>메이플스토리 공홈의 공지를 루시를 통해 구독할 수 있습니다.</p>
+        <p>명령어를 한번 사용하면 그 방에서 구독이 시작되며, 다시 한 번 입력할 시 구독이 취소됩니다.</p>
+        <img src="Images/maple_1_18.jpg" alt="메이플 31" />
+      </CommandSection>
+	  
+	  <CommandSection title="@이벤트">
+        <p>사용법: <span className="legend-prefix">@이벤트</span></p>
+        <p>현재 진행중인 메이플스토리의 이벤트 목록을 볼 수 있습니다.</p>
+        <img src="Images/maple_1_20.jpg" alt="메이플 31" />
       </CommandSection>
 
       <CommandSection title="@방무">
@@ -150,6 +167,8 @@ function Maple() {
         <p><span className="legend-prefix">@태성비 </span><span className="legend-required">[레벨]</span></p>
         <p><span className="legend-prefix">@극성비 </span><span className="legend-required">[레벨]</span></p>
         <p><span className="legend-prefix">@초성비 </span><span className="legend-required">[레벨]</span></p>
+		<p><span className="legend-prefix">@도성비 </span><span className="legend-required">[레벨]</span></p>
+		<p><span className="legend-prefix">@전성비 </span><span className="legend-required">[레벨]</span></p>
         <p>극한 성장의 비약, 태풍 성장의 비약 등 각종 비약류의 경험치량을 출력합니다.</p>
         <img src="Images/maple_1_47.jpg" alt="메이플 25" />
         <br />
@@ -160,11 +179,38 @@ function Maple() {
         <img src="Images/maple_1_34.jpg" alt="메이플 34" />
       </CommandSection>
 
-      <CommandSection title="@하이마운틴">
+      <CommandSection title="@하이마운틴, @앵글러, @악몽">
         <p>사용법: <span className="legend-prefix">@하이마운틴 </span><span className="legend-required">[레벨]</span></p>
-        <p>대체 명령어: <span className="legend-prefix">@높은산</span>, <span className="legend-prefix">@안녕산</span></p>
-        <p>에픽던전 하이마운틴의 경험치량과, 추가 메이플포인트 사용 시의 경험치량을 출력합니다.</p>
+		<p><span className="legend-prefix">@앵글러 </span><span className="legend-required">[레벨]</span></p>
+		<p><span className="legend-prefix">@악몽선경 </span><span className="legend-required">[레벨]</span></p>
+        <p>대체 명령어: <span className="legend-prefix">@높은산</span>, <span className="legend-prefix">@안녕산</span>, <span className="legend-prefix">@악몽</span></p>
+        <p>하이마운틴 등 에픽던전의 경험치량과, 추가 메이플포인트 사용 시의 경험치량을 출력합니다.</p>
         <img src="Images/maple_1_52.jpg" alt="메이플 24" />
+      </CommandSection>
+	  
+	  <CommandSection title="@익몬">
+        <p>사용법: <span className="legend-prefix">@익몬 </span><span className="legend-required">[레벨]</span></p>
+        <p>몬스터파크 익스트림 클리어 시의 경험치량을 출력합니다.</p>
+        <img src="Images/maple_1_22.jpg" alt="메이플 24" />
+      </CommandSection>
+	  
+	  <CommandSection title="@exp, @상급exp">
+        <p>사용법: <span className="legend-prefix">@exp </span><span className="legend-required">[레벨] [갯수]</span></p>
+		<p><span className="legend-prefix">@상급exp </span><span className="legend-required">[레벨] [갯수]</span></p>
+        <p>EXP쿠폰 사용 시의 경험치량을 출력합니다.</p>
+        <img src="Images/maple_1_55.jpg" alt="메이플 24" />
+      </CommandSection>
+	  
+	  <CommandSection title="@익부">
+        <p>사용법: <span className="legend-prefix">@익부 </span><span className="legend-required">[레벨] [마릿수]</span></p>
+        <p>익스프레스 부스터 몬스터 사냥 시의 경험치량을 출력합니다.</p>
+        <img src="Images/maple_1_56.jpg" alt="메이플 24" />
+      </CommandSection>
+	  
+	  <CommandSection title="@메카딸기">
+        <p>사용법: <span className="legend-prefix">@메카딸기 </span><span className="legend-required">[레벨]</span></p>
+        <p>메카 딸기농장 클리어 시의 경험치량을 출력합니다.</p>
+        <img src="Images/maple_1_57.jpg" alt="메이플 24" />
       </CommandSection>
 
       <CommandSection title="@추옵">
@@ -190,9 +236,9 @@ function Maple() {
         <img src="Images/maple_1_37.jpg" alt="메이플 37" />
       </CommandSection>
 
-      <CommandSection title="@6 차">
+      <CommandSection title="@6차">
         <p>사용법:</p>
-        <p><span className="legend-prefix">@6 차 </span><span className="legend-required">[시작레벨]</span><span className="legend-required"> [끝레벨]</span></p>
+        <p><span className="legend-prefix">@6차 </span><span className="legend-required">[시작레벨]</span><span className="legend-required"> [끝레벨]</span></p>
         <p><span className="legend-prefix">@오리진 </span><span className="legend-required">[시작레벨]</span><span className="legend-required"> [끝레벨]</span></p>
         <p><span className="legend-prefix">@마스터리 </span><span className="legend-required">[시작레벨]</span><span className="legend-required"> [끝레벨]</span></p>
         <p><span className="legend-prefix">@강화 </span><span className="legend-required">[시작레벨]</span><span className="legend-required"> [끝레벨]</span></p>
@@ -207,6 +253,19 @@ function Maple() {
         <img src="Images/maple_1_44.jpg" alt="메이플 37" />
         <br />
         <img src="Images/maple_1_45.jpg" alt="메이플 37" />
+      </CommandSection>
+	  
+      <CommandSection title="@채널">
+        <p>사용법: <span className="legend-prefix">@채널</span></p>
+		<p><span className="legend-prefix">@챌널</span></p>
+        <p>에픽빔이 잘 뜰 것 같은 채널 하나를 추천해 줍니다.<br />챌널은 챌린저스 서버, 채널은 스카니아 서버 기준입니다.</p>
+        <img src="Images/maple_1_21.jpg" alt="메이플 18" />
+      </CommandSection>
+	  
+	  <CommandSection title="@명당">
+        <p>사용법: <span className="legend-prefix">@명당</span></p>
+        <p>강화가 잘 되는 명당 하나를 추천해 줍니다.</p>
+        <img src="Images/maple_1_48.jpg" alt="메이플 18" />
       </CommandSection>
 
       <CommandSection title="@녜힁">
