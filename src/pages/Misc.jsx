@@ -1,6 +1,10 @@
+import { useState } from 'react'
 import CommandSection from '../components/CommandSection'
+import SearchBar from '../components/SearchBar'
 
 function Misc() {
+  const [searchQuery, setSearchQuery] = useState('')
+
   return (
     <article>
       <header>
@@ -11,7 +15,9 @@ function Misc() {
         <p><span className="legend-optional">(연두색)</span>: 생략 가능한 옵션 인자</p>
       </header>
 
-      <CommandSection title="@욕설필터">
+      <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} placeholder="명령어 검색..." />
+
+      <CommandSection title="@욕설필터" searchQuery={searchQuery}>
         <p>사용법: <span className="legend-prefix">@욕설필터</span></p>
         <p>해당 채팅방의 욕설 감지 기능을 ON/OFF 합니다.</p>
         <img src="Images/misc_3.jpg" alt="기타 3" />
@@ -19,7 +25,7 @@ function Misc() {
         <img src="Images/misc_4.jpg" alt="기타 4" />
       </CommandSection>
 
-      <CommandSection title="~ 라고하면 ~ 라고해">
+      <CommandSection title="~ 라고하면 ~ 라고해" searchQuery={searchQuery}>
         <p>사용법: <span className="legend-required">[명령어]</span><span className="legend-prefix"> 라고하면 </span><span className="legend-required">[대답]</span><span className="legend-prefix"> 라고해</span></p>
         <p>설정한 명령어 지우기: <span className="legend-required">[명령어]</span><span className="legend-prefix"> 라고하지마</span></p>
         <p>직접 루시의 자동응답 기능을 설정할 수 있습니다.</p>

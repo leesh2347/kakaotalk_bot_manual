@@ -1,6 +1,10 @@
+import { useState } from 'react'
 import CommandSection from '../components/CommandSection'
+import SearchBar from '../components/SearchBar'
 
 function MapleLlm() {
+  const [searchQuery, setSearchQuery] = useState('')
+
   return (
     <article>
       <header>
@@ -17,55 +21,57 @@ function MapleLlm() {
         <p><span className="legend-optional">[예시]</span>: '판단 기준' 을 기준으로 해당 기능을 요청하는 자연어 질문 예시</p>
       </section>
 
-      <CommandSection title="@메이플">
+      <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} placeholder="명령어 검색..." />
+
+      <CommandSection title="@메이플" searchQuery={searchQuery}>
         <p><span className="legend-required">[판단 기준]</span>: 사용자의 질문이 특정 이름 또는 닉네임의 캐릭터에 대한 단순한 정보 요청</p>
         <p><span className="legend-optional">[예시]</span>: 루시 디벨로이드 캐릭터 정보 검색해줘</p>
 		<img src="Images/llm_1.jpg" alt="llm 1" />
       </CommandSection>
 
-      <CommandSection title="@무릉">
+      <CommandSection title="@무릉" searchQuery={searchQuery}>
         <p><span className="legend-required">[판단 기준]</span>: 사용자의 질문이 특정 이름 또는 닉네임의 캐릭터에 대한 '무릉' 관련 정보 요청</p>
         <p><span className="legend-optional">[예시]</span>: 루시 디벨로이드 캐릭터 무릉 층수 검색해줘</p>
 		<img src="Images/maple_1_1.jpg" alt="llm 2" />
       </CommandSection>
 
-      <CommandSection title="@유니온">
+      <CommandSection title="@유니온" searchQuery={searchQuery}>
         <p><span className="legend-required">[판단 기준]</span>: 사용자의 질문이 특정 이름 또는 닉네임의 캐릭터에 대한 '유니온' 관련 정보 요청</p>
         <p><span className="legend-optional">[예시]</span>: 루시 디벨로이드 캐릭터 유니온 검색해줘</p>
 		<img src="Images/llm_2.jpg" alt="llm 3" />
       </CommandSection>
 
-      <CommandSection title="@업적">
+      <CommandSection title="@업적" searchQuery={searchQuery}>
         <p><span className="legend-required">[판단 기준]</span>: 사용자의 질문이 특정 이름 또는 닉네임의 캐릭터에 대한 '업적' 관련 정보 요청</p>
         <p><span className="legend-optional">[예시]</span>: 루시 디벨로이드 캐릭터 업적 검색해줘</p>
 		<img src="Images/maple_1_1.jpg" alt="llm 4" />
       </CommandSection>
 
-      <CommandSection title="@아티팩트">
+      <CommandSection title="@아티팩트" searchQuery={searchQuery}>
         <p><span className="legend-required">[판단 기준]</span>: 사용자의 질문이 특정 이름 또는 닉네임의 캐릭터에 대한 '아티팩트' 관련 정보 요청</p>
         <p><span className="legend-optional">[예시]</span>: 루시 디벨로이드 캐릭터 아티팩트 검색해줘</p>
 		<img src="Images/llm_3.jpg" alt="llm 5" />
       </CommandSection>
 
-      <CommandSection title="@스탯">
+      <CommandSection title="@스탯" searchQuery={searchQuery}>
         <p><span className="legend-required">[판단 기준]</span>: 사용자의 질문이 특정 이름 또는 닉네임의 캐릭터에 대한 '스탯' 관련 정보 요청</p>
         <p><span className="legend-optional">[예시]</span>: 루시 디벨로이드 캐릭터 스탯 검색해줘</p>
 		<img src="Images/llm_4.jpg" alt="llm 6" />
       </CommandSection>
 
-      <CommandSection title="@헥사">
+      <CommandSection title="@헥사" searchQuery={searchQuery}>
         <p><span className="legend-required">[판단 기준]</span>: 사용자의 질문이 특정 이름 또는 닉네임의 캐릭터에 대한 '6 차 강화' 관련 정보 요청</p>
         <p><span className="legend-optional">[예시]</span>: 루시 디벨로이드 캐릭터 6 차 강화 얼마나 되어 있어?</p>
 		<img src="Images/llm_5.jpg" alt="llm 7" />
       </CommandSection>
 
-      <CommandSection title="@메창">
+      <CommandSection title="@메창" searchQuery={searchQuery}>
         <p><span className="legend-required">[판단 기준]</span>: 사용자의 질문이 특정 이름 또는 닉네임의 캐릭터가 '얼마나 메창인지'에 대한 정보 요청</p>
         <p><span className="legend-optional">[예시]</span>: 루시 디벨로이드 캐릭터 메창이야?</p>
 		<img src="Images/llm_6.jpg" alt="llm 8" />
       </CommandSection>
 
-      <CommandSection title="@레벨, @히스토리">
+      <CommandSection title="@레벨, @히스토리" searchQuery={searchQuery}>
         <p><span className="legend-required">[판단 기준]</span>:</p>
         <p>1. 사용자의 질문이 특정 이름 또는 닉네임의 캐릭터의 '경험치' 관련 정보 요청</p>
         <p>1.1. 사용자가 단일 날짜의 절대적 날짜 (예시: 6 월 1 일) 또는 상대적 날짜 (예시: 오늘, 어제) 의 정보 요청할 경우: @레벨 기능 처리</p>
@@ -81,7 +87,7 @@ function MapleLlm() {
 		<img src="Images/llm_8.jpg" alt="메이플 10" />
       </CommandSection>
 
-      <CommandSection title="@6 차">
+      <CommandSection title="@6 차" searchQuery={searchQuery}>
         <p><span className="legend-required">[판단 기준]</span>: 사용자의 질문이 특정 이름 또는 닉네임의 캐릭터에 대한 정보를 요청하는 것이 아니면서, 단순히 '6 차 강화' 에 대한 정보를 요청</p>
         <p>시작 레벨과 끝 레벨 중 사용자의 질문에서 생략된 값이 있을 경우 각각 최소값과 최대값을 기본값으로 함</p>
         <p><span className="legend-optional">[예시]</span>:</p>
@@ -91,7 +97,7 @@ function MapleLlm() {
 		<img src="Images/llm_9.jpg" alt="llm 11" />
       </CommandSection>
 
-      <CommandSection title="@어센틱">
+      <CommandSection title="@어센틱" searchQuery={searchQuery}>
         <p><span className="legend-required">[판단 기준]</span>: 사용자의 질문이 어센틱심볼 레벨업 비용에 대한 정보를 요청</p>
         <p>시작 레벨과 끝 레벨 중 사용자의 질문에서 생략된 값이 있을 경우 각각 최소값과 최대값을 기본값으로 함</p>
         <p><span className="legend-optional">[예시]</span>:</p>
@@ -101,7 +107,7 @@ function MapleLlm() {
 		<img src="Images/llm_10.jpg" alt="llm 12" />
       </CommandSection>
 
-      <CommandSection title="단축어">
+      <CommandSection title="단축어" searchQuery={searchQuery}>
         <p>메이플스토리 유저들 사이에서 통용되는 일부 단축어들도 인식합니다.</p>
         <p>단, 학습이 되어 있지 않은 단축어는 인식하지 못할 수도 있습니다.</p>
         <p><br />현재 학습된 단축어 목록</p>

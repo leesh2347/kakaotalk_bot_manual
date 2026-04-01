@@ -1,12 +1,16 @@
+import { useState } from 'react'
 import CommandSection from '../components/CommandSection'
+import SearchBar from '../components/SearchBar'
 
 function Pok() {
+  const [searchQuery, setSearchQuery] = useState('')
+
   return (
     <article>
       <header>
         <h1>포켓몬 게임</h1>
         <p>카톡봇을 통해 구현한 포켓몬 게임입니다.</p>
-        <a href="https://open.kakao.com/o/gLMlASQd">
+        <a href="https://open.kakao.com/o/sEEy7fze">
           <h3><span style={{ color: '#2E9AFE', fontSize: '25px' }}><del>게임 운영중인 채팅방 링크</del></span></h3>
         </a>
         <p><del>● 도배가 워낙 심한 기능이라 따로 채팅방을 파서 이 곳에서만 구동되게 해놨습니다.</del></p>
@@ -17,7 +21,9 @@ function Pok() {
         <p><span className="legend-optional">(연두색)</span>: 생략 가능한 옵션 인자</p>
       </header>
 
-      <CommandSection title="가입과 탈퇴">
+      <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} placeholder="명령어 검색..." />
+
+      <CommandSection title="가입과 탈퇴" searchQuery={searchQuery}>
         <p>가입: <span className="legend-prefix">@포켓몬 가입</span></p>
         <p>탈퇴: <span className="legend-prefix">@포켓몬 탈퇴</span></p>
         <p>자신의 채팅방 닉네임을 통해 가입합니다.</p>
@@ -26,7 +32,7 @@ function Pok() {
         <img src="Images/pok_1_2.jpg" alt="포켓몬 2" />
       </CommandSection>
 
-      <CommandSection title="탐험과 포켓몬 출현">
+      <CommandSection title="탐험과 포켓몬 출현" searchQuery={searchQuery}>
         <p>탐험 시작: <span className="legend-prefix">@야생</span> 또는 <span className="legend-prefix">ㅇㅅ</span></p>
         <p>볼 던지기: <span className="legend-prefix">@볼</span> 또는 <span className="legend-prefix">ㅂ</span></p>
         <p>휴식: <span className="legend-prefix">@휴식</span></p>
@@ -50,7 +56,7 @@ function Pok() {
         <img src="Images/pok_12.jpg" alt="포켓몬 15" />
       </CommandSection>
 
-      <CommandSection title="포켓몬 출현과 포획">
+      <CommandSection title="포켓몬 출현과 포획" searchQuery={searchQuery}>
         <p>탐험 시작: <span className="legend-prefix">@야생</span> 또는 <span className="legend-prefix">ㅇㅅ</span></p>
         <p>볼 던지기: <span className="legend-prefix">@볼</span> 또는 <span className="legend-prefix">ㅂ</span></p>
         <p>도망치기: <span className="legend-prefix">@도망</span> 또는 <span className="legend-prefix">ㄷㅁ</span></p>
@@ -71,7 +77,7 @@ function Pok() {
         <img src="Images/pok_10.jpg" alt="포켓몬 13" />
       </CommandSection>
 
-      <CommandSection title="플레이 정보 확인">
+      <CommandSection title="플레이 정보 확인" searchQuery={searchQuery}>
         <p>트레이너 정보 보기: <span className="legend-prefix">@트레이너정보</span><span className="legend-optional"> (채팅방에서의 이름)</span></p>
         <p>포켓몬 보관함 보기: <span className="legend-prefix">@내 포켓몬</span></p>
         <p>보관함 비우기 (돈 획득): <span className="legend-prefix">@놓아주기</span></p>
@@ -96,7 +102,7 @@ function Pok() {
         <img src="Images/pok_19.jpg" alt="포켓몬 22" />
       </CommandSection>
 
-      <CommandSection title="포켓몬 육성">
+      <CommandSection title="포켓몬 육성" searchQuery={searchQuery}>
         <p>포켓몬 보관함 보기: <span className="legend-prefix">@내 포켓몬</span></p>
         <p>포켓몬 정보 보기 (덱): <span className="legend-prefix">@덱정보</span><span className="legend-required"> (덱 번호)</span></p>
         <p>포켓몬 정보 보기 (보관함): <span className="legend-prefix">@포켓몬정보</span><span className="legend-required"> (보관함 번호)</span></p>
@@ -138,7 +144,7 @@ function Pok() {
         <img src="Images/pok_55.jpg" alt="포켓몬 57" />
       </CommandSection>
 
-      <CommandSection title="등급업">
+      <CommandSection title="등급업" searchQuery={searchQuery}>
         <p>볼 업그레이드: <span className="legend-prefix">@볼강화</span></p>
         <p>볼 업그레이드 종류: <span className="legend-prefix">@볼종류</span></p>
         <p>트레이너 등급 종류: <span className="legend-prefix">@트레이너등급</span></p>
@@ -158,7 +164,7 @@ function Pok() {
         <img src="Images/pok_30.jpg" alt="포켓몬 36" />
       </CommandSection>
 
-      <CommandSection title="포켓몬 배틀">
+      <CommandSection title="포켓몬 배틀" searchQuery={searchQuery}>
         <p>PVP 배틀 참가: <span className="legend-prefix">@배틀참가</span></p>
         <p>(2 인 참가 시 매칭되어 배틀 진행)</p>
         <p>배틀 참가 후 매칭 취소: <span className="legend-prefix">@배틀취소</span></p>
@@ -174,7 +180,7 @@ function Pok() {
         <img src="Images/pok_36.jpg" alt="포켓몬 53" />
       </CommandSection>
 
-      <CommandSection title="레이드 컨텐츠 (배틀)">
+      <CommandSection title="레이드 컨텐츠 (배틀)" searchQuery={searchQuery}>
         <p>체육관 도전: <span className="legend-prefix">@체육관</span></p>
         <p>배틀타워 (일일컨텐츠): <span className="legend-prefix">@배틀타워</span></p>
         <p><br />체육관과 뱃지는 타입별 1 개씩 총 18 개이며, 체육관 도전은 체력을 5 소모합니다.</p>
@@ -191,7 +197,7 @@ function Pok() {
         <img src="Images/pok_38.jpg" alt="포켓몬 44" />
       </CommandSection>
 
-      <CommandSection title="챔피언리그">
+      <CommandSection title="챔피언리그" searchQuery={searchQuery}>
         <p>챔피언리그 도전: <span className="legend-prefix">@챔피언도전</span></p>
         <p><br />챔피언리그 도전은 모든 뱃지를 획득해야 가능하며, 체력을 5 소모합니다.</p>
         <p>챔피언리그는 리로드 1 회당 1 회씩만 클리어 가능합니다.</p>
@@ -205,7 +211,7 @@ function Pok() {
         <img src="Images/pok_41.jpg" alt="포켓몬 45" />
       </CommandSection>
 
-      <CommandSection title="도감 (컬렉션)">
+      <CommandSection title="도감 (컬렉션)" searchQuery={searchQuery}>
         <p>자신의 도감 현황 확인: <span className="legend-prefix">@내 컬렉션</span></p>
         <p>도감 포켓몬 목록: <span className="legend-prefix">@컬렉션목록</span></p>
         <p>도감 보상 효과 목록: <span className="legend-prefix">@컬렉션효과</span></p>
@@ -221,7 +227,7 @@ function Pok() {
         <img src="Images/pok_48.jpg" alt="포켓몬 50" />
       </CommandSection>
 
-      <CommandSection title="그 외">
+      <CommandSection title="그 외" searchQuery={searchQuery}>
         <p>제비뽑기 (일일 컨텐츠): <span className="legend-prefix">@제비뽑기</span></p>
         <p>현재 진행중인 이벤트 확인: <span className="legend-prefix">@포켓몬이벤트</span></p>
         <p><br />제비뽑기는 일일 컨텐츠로, 1 회 리로드 당 3 회 도전 가능하며, 운이 좋다면 대량의 금액 등 좋은 보상을 획득할 수 있습니다.</p>

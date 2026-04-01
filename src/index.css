@@ -156,6 +156,51 @@ a {
   display: block;
 }
 
+/* Search Bar */
+.search-container {
+  position: relative;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  font-size: 16px;
+  font-family: 'dotum', sans-serif;
+  background-color: #1C1C1C;
+  border: 2px solid #0B3861;
+  border-radius: 8px;
+  color: white;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  border-color: #58ACFA;
+}
+
+.search-input::placeholder {
+  color: #888;
+}
+
+.search-clear {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: color 0.2s;
+}
+
+.search-clear:hover {
+  color: white;
+}
+
 /* Legend colors */
 .legend-prefix {
   color: #A9F5F2;
