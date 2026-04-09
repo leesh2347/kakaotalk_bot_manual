@@ -11,10 +11,9 @@ function Pok() {
         <h1>포켓몬 게임</h1>
         <p>카톡봇을 통해 구현한 포켓몬 게임입니다.</p>
         <a href="https://open.kakao.com/o/sEEy7fze">
-          <h3><span style={{ color: '#2E9AFE', fontSize: '25px' }}><del>게임 운영중인 채팅방 링크</del></span></h3>
+          <h3><span style={{ color: '#2E9AFE', fontSize: '25px' }}>게임 운영중인 채팅방 링크</span></h3>
         </a>
-        <p><del>● 도배가 워낙 심한 기능이라 따로 채팅방을 파서 이 곳에서만 구동되게 해놨습니다.</del></p>
-        <p><span style={{ color: '#FE2EF7' }}>카카오링크 (사진 출력) 기능의 서비스 종료로 인해 수정이 필요하여 해당 게임의 운영은 잠정중단합니다. 양해 부탁드립니다.</span></p>
+        <p>● 도배가 워낙 심한 기능이라 따로 채팅방을 파서 이 곳에서만 구동되게 해놨습니다.</p>
 
         <p><br /><span className="legend-prefix">@하늘색</span>: 해당 기능을 불러오는 명령어의 접두어</p>
         <p><span className="legend-required">[분홍색]</span>: 필수로 입력해야 하는 인자</p>
