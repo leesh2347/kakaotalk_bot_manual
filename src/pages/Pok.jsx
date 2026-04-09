@@ -10,7 +10,7 @@ function Pok() {
       <header>
         <h1>포켓몬 게임</h1>
         <p>카톡봇을 통해 구현한 포켓몬 게임입니다.</p>
-        <a href="https://open.kakao.com/o/sEEy7fze">
+        <a href="https://open.kakao.com/o/gLMlASQd">
           <h3><span style={{ color: '#2E9AFE', fontSize: '25px' }}>게임 운영중인 채팅방 링크</span></h3>
         </a>
         <p>● 도배가 워낙 심한 기능이라 따로 채팅방을 파서 이 곳에서만 구동되게 해놨습니다.</p>
